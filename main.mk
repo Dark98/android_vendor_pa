@@ -49,13 +49,15 @@ PRODUCT_PROPERTY_OVERRIDES += persist.sys.hideapn=false
 
 # Include vendor overlays
 PRODUCT_PACKAGE_OVERLAYS += vendor/pa/overlay/common
-PRODUCT_PACKAGE_OVERLAYS += vendor/pa/overlay/$(TARGET_PRODUCT)
 
 # Recommend using the non debug dexpreopter
 USE_DEX2OAT_DEBUG := false
 
 # Include APN information
 PRODUCT_COPY_FILES += vendor/pa/prebuilt/etc/apns-conf.xml:system/etc/apns-conf.xml
+
+# Allow tethering without provisioning app
+PRODUCT_PROPERTY_OVERRIDES += net.tethering.noprovisioning=true
 
 # Include support for preconfigured permissions
 PRODUCT_COPY_FILES += vendor/pa/prebuilt/etc/default-permissions/pa-permissions.xml:system/etc/default-permissions/pa-permissions.xml
