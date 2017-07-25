@@ -16,7 +16,7 @@ export VENDOR := pa
 
 # Include versioning information
 # Format: Major.minor.maintenance(-TAG)
-export PA_VERSION := 7.2.1-DEV
+export PA_VERSION := 7.2.2-DEV
 
 export ROM_VERSION := $(PA_VERSION)-$(shell date -u +%Y%m%d)
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -126,6 +126,9 @@ ifeq ($(TARGET_BOOT_ANIMATION_RES),1080)
 endif
 ifeq ($(TARGET_BOOT_ANIMATION_RES),1440)
      PRODUCT_COPY_FILES += vendor/pa/prebuilt/bootanimation/1440.zip:system/media/bootanimation.zip
+endif
+ifeq ($(TARGET_BOOT_ANIMATION_RES),2160)
+     PRODUCT_COPY_FILES += vendor/pa/prebuilt/bootanimation/2160.zip:system/media/bootanimation.zip
 endif
 
 # Clear security patch level
