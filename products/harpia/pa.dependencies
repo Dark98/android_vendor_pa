@@ -25,9 +25,9 @@
     },
     {
         "remote":       "github",
-        "repository":   "ishubhamsingh/android_hardware_qcom_audio",
+        "repository":   "dark98/hardware_qcom_audio",
         "target_path":  "hardware/qcom/audio",
-        "revision":     "nougat-mr2-8916"
+        "revision":     "nougat-mr2"
     },
     {
         "remote":       "github",
