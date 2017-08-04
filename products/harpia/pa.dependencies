@@ -33,7 +33,7 @@
         "remote":       "github",
         "repository":   "dark98/hardware_qcom_display",
         "target_path":  "hardware/qcom/display",
-        "revision":     "n7x-8916"
+        "revision":     "n7x-caf-8916"
     },
     {
         "remote":       "github",
