@@ -19,9 +19,9 @@
     },
     {
         "remote":       "github",
-        "repository":   "ishubhamsingh/android_kernel_motorola_msm8916",
+        "repository":   "dark98/android_kernel_motorola_msm8916",
         "target_path":  "kernel/motorola/msm8916",
-        "revision":     "nougat-mr2"
+        "revision":     "permissive"
     },
     {
         "remote":       "github",
@@ -31,9 +31,9 @@
     },
     {
         "remote":       "github",
-        "repository":   "ishubhamsingh/android_hardware_qcom_display",
+        "repository":   "dark98/hardware_qcom_display",
         "target_path":  "hardware/qcom/display",
-        "revision":     "nougat-mr2-8916"
+        "revision":     "n7x-8916"
     },
     {
         "remote":       "github",
@@ -43,9 +43,9 @@
     },
     {
         "remote":       "github",
-        "repository":   "ishubhamsingh/android_hardware_qcom_media",
+        "repository":   "dirtyunicorns/android_hardware_qcom_media",
         "target_path":  "hardware/qcom/media",
-        "revision":     "nougat-mr2-8916"
+        "revision":     "n7x-8916"
     },
     {
         "remote":      "github",
