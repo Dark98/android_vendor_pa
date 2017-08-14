@@ -49,7 +49,7 @@
     },
     {
         "remote":      "github",
-        "repository":  "SubhrajyotiSen/vendor_motorola_harpia",
+        "repository":  "Dark98/vendor_motorola_harpia",
         "target_path": "vendor/motorola",
         "revision":      "cm-14.1"
     },
