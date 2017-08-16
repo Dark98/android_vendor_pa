@@ -19,7 +19,7 @@
     },
     {
         "remote":       "github",
-        "repository":   "dark98/android_kernel_motorola_msm8916",
+        "repository":   "SubhrajyotiSen/android_kernel_motorola_msm8916",
         "target_path":  "kernel/motorola/msm8916",
         "revision":     "permissive"
     },
@@ -43,7 +43,7 @@
     },
     {
         "remote":      "github",
-        "repository":  "Dark98/vendor_motorola_harpia",
+        "repository":  "SubhrajyotiSen/vendor_motorola_harpia",
         "target_path": "vendor/motorola",
         "revision":      "cm-14.1"
     },
