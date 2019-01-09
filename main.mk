@@ -144,6 +144,9 @@ include vendor/pa/sepolicy/sepolicy.mk
 # Include proprietary header flags if vendor/head exists
 -include vendor/head/head-capabilities.mk
 
+#Include NeverSleep HAX
+-include $(LOCAL_VENDOR_PATH)/init/init.mk
+
 ifneq ($(HOST_OS),linux)
 ifneq ($(sdclang_already_warned),true)
 $(warning **********************************************)
