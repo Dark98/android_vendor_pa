@@ -13,6 +13,7 @@ service vendor.neversleep /vendor/bin/neversleep.sh
 on property:sys.boot_completed=1 && property:persist.vendor.neversleep=1
     # HACK: Hold wakelock so device never goes to sleep
     write /sys/power/wake_lock "shawnofthedead"
+    log -t "neversleep" -p w "HACK: Disabling sleep. Set persist.vendor.neversleep to 0 to re-enable deep sleep"
 
 on property:persist.vendor.neversleep=0
     # For unlocking temporarily, use this:
