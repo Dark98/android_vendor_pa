@@ -1,0 +1,2 @@
+# HACK: Little helper script to set default neversleep option
+/(system/vendor|vendor)/bin/neversleep\.sh         u:object_r:neversleep_exec:s0

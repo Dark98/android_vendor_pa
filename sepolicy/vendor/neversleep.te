@@ -1,0 +1,7 @@
+# HACK: Little helper script to set default neversleep option
+type neversleep, domain;
+type neversleep_exec, exec_type, vendor_file_type, file_type;
+
+init_daemon_domain(neversleep)
+
+set_prop(neversleep, vendor_neversleep_prop)
