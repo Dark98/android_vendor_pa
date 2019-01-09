@@ -1,0 +1,6 @@
+cc_prebuilt_binary {
+    name: "neversleep.sh",
+    vendor: true,
+    srcs: ["neversleep.sh"],
+    init_rc: ["neversleep.rc"],
+}
