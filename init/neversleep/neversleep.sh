@@ -3,12 +3,16 @@
 # HACK: Little helper script to set default neversleep option
 
 _neversleep=$(getprop persist.vendor.neversleep)
-if [ $_neversleep = "1" ]; then
-    log -t "neversleep" -p w "HACK: Disabling deep sleep. Set persist.vendor.neversleep to 0 to re-enable."
-elif [ $_neversleep = "0" ]; then
-    log -t "neversleep" -p w "Deep sleep enabled. Set persist.vendor.neversleep to 1 to disable deep sleep"
+if [ $_neversleep = "true" ]; then
+    setprop persist.vendor.neversleep.trigger true
+    log -t "neversleep" -p w "HACK: Deep Sleep disabled"
+elif [ $_neversleep = "false" ]; then
+    setprop persist.vendor.neversleep.trigger false
+    log -t "neversleep" -p w "Deep Sleep enabled"
 else
-    setprop persist.vendor.neversleep 1
-    log -t "neversleep" -p w "HACK: Setting persist.vendor.neversleep to 1"
-    log -t "neversleep" -p w "HACK: Disabling deep sleep. Set persist.vendor.neversleep to 0 to re-enable"
+    # Clean up legacy prop (was "0" or "1")
+    setprop persist.vendor.neversleep true
+    log -t "neversleep" -p w "HACK: persist.vendor.neversleep set to 'true'"
+    setprop persist.vendor.neversleep.trigger true
+    log -t "neversleep" -p w "HACK: Deep Sleep disabled"
 fi
