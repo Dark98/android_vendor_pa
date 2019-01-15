@@ -36,6 +36,6 @@ add_lunch_combo pa_kagura-userdebug
 add_lunch_combo pa_keyaki-userdebug
 
 # SDClang Environment Variables
-export SDCLANG_AE_CONFIG=vendor/pa/sdclang/sdclangAE.json
-export SDCLANG_CONFIG=vendor/pa/sdclang/sdclang.json
-export SDCLANG_SA_ENABLED=false
+export SDCLANG_AE_CONFIG=device/sony/common/sdclang/sdclangAE.json
+export SDCLANG_CONFIG=device/sony/common/sdclang/sdclang.json
+export SDCLANG_SA_ENABLED=true

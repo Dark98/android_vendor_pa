@@ -17,12 +17,18 @@ ifeq (pa_kagura,$(TARGET_PRODUCT))
 
 # Use the AOSP stack
 TARGET_USES_AOSP := true
+TARGET_EXCLUDE_QCOM_SEPOLICY := true
+#BOARD_USE_ENFORCING_SELINUX := false
+
 
 # Inherit AOSP device configuration
 $(call inherit-product, device/sony/kagura/aosp_f8331.mk)
 
+# SELinux
+include device/sony/sepolicy/sepolicy.mk
+
 # Generic CAF packages
-include device/qcom/common/common.mk
+#include device/qcom/common/common.mk
 
 TARGET_BOOT_ANIMATION_RES := 1080
 
