@@ -218,9 +218,9 @@
     {
         "remote": "github",
         "repository": 
-"sonyxperiadev/packages_apps_ExtendedSettings",
+	"Dark98/packages_apps_ExtendedSettings",
         "target_path": 
-"packages/apps/ExtendedSettings",
-        "revision": "master"
+	"packages/apps/ExtendedSettings",
+        "revision": "sleep"
     }
 ]
